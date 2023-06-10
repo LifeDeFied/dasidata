@@ -18,4 +18,4 @@ This will install the necessary libraries with correct python versions required 
 
 4. Once the libraries are installed, define and change the hyperparameters for training in `train.py`.
 
-That's it! You should now be able to use the scripts in this repository to gather, clean, and train data for your project.
+That's it! You should now be able to use the scripts in this repository to gather, clean, and train data for LifeDeFied projects.
