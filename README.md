@@ -1,18 +1,21 @@
-# Within your terminal run the following command. 
+## Installation Instructions
 
+To install and run this repository on your machine, please follow these steps:
+
+1. Clone the repository to your local machine using Git.
+2. Navigate to the directory containing the cloned repository using your terminal.
+3. Run the following command to start the installation process:
+
+```
 user$ ./process.sh 
+```
 
-This will run and install.sh the needed libraries with correct python versions in order to run the following:
+This will install the necessary libraries with correct python versions required to run the following scripts successfully:
 
-gather.py (gather and index data from specified URLs on the internet)
-- exports an extracted_text.txt
+- `gather.py` - Used to gather and index data from specified URLs on the internet. The script exports an `extracted_text.txt` file containing the gathered data.
+- `clean.py` - Used to tidy up and organize the data collected in `extracted_text.txt`.
+- `train.py` - Used to tokenize and train the model. This script communicates with `dataset.py` (torch tokenizer) and exports a `trained_model` for testing and production.
 
-clean.py (tidy up and organize the data)
-- gathered in extracted_text.txt)
+4. Once the libraries are installed, define and change the hyperparameters for training in `train.py`.
 
-train.py (tokenize and train the model)
-- communicates with dataset.py (torch tokenizer)
-
-A trained_model is then exported for testing and production
-
-Define and change the hyperparameters for training in train.py
+That's it! You should now be able to use the scripts in this repository to gather, clean, and train data for your project.
